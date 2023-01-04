@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <Header>
+        <div class="announcements">
+
+        </div>
+        <div class="headerMenu">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="media/images/PetraLogo.png" alt="Logo">
+                </a>
+            </div>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <nav class="nav-bar">
+                <ul>
+                    <li>
+                        <a href="index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="suites.html">ROOMS & SUITES</a>
+                    </li>
+                    <li>
+                        <a id="contact-us-button" href="contact-us.html">Contact Us <img
+                                src="media/images/telephone.png" alt="telephone icon">
+                        </a>
+
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="hero">
+            <img src="media/images/contactUsHero.png" alt="">
+        </div>
+    </Header>
+    <main>
+        <section class="contactUs">
+            <address>
+                <h1>Contact us:</h1>
+                <br>
+                <a href="mailto:petra@resort.com"><img src="media\images\mail.png" alt="An Email icon">
+                    Petra@resort.com</a>
+                <br><br>
+                <a href="tel:123-456-7890"><img src="media\images\telephone.png" alt="A phone icon"> 123-456-7890</a>
+                <br><br>
+                <img src="media\images\address.png" alt="An adress needle icon"> Dead Sea Road, Amman, Jordan.
+                <br><br><br>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3393.9172907692205!2d35.58708571600217!3d31.71815424452065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
+                1!3m3!1m2!1s0x15034a4049101733%3A0xa8beb5cc56bd0780!2zTGl3xIEnIGFzaCBTaMWrbmFoIGFsIEphbsWrYsSreWFoLCBKb3JkYW5pZW4!5e0!3m2!1ssv!2sse!4v1672772188011!5m2!1ssv!2sse"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </address>
+            <div id="confirmationMSG">
+                <p>Thank you for contacting us, your query will be answered as fast as possible!</p>
+                </div>
+            <form id="contactForm">
+                <h1>Send us a form:</h1>
+                <br>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <br><br>
+                <legend>Preferred Contact Method:</legend>
+                <br>
+                <label for="phoneCheck">Phone</label>
+                <input type="checkbox" id="phoneCheck" name="prefPhone">
+                <br>
+                <label for="emailCheck">E-mail</label>
+                <input type="checkbox" id="emailCheck" name="prefEmail">
+                <br><br>
+                <label for="subject">Subject:</label>
+                <select id="subject" name="subject" required>
+                    <option value="">-- Please select an option --</option>
+                    <option value="Existing-booking">EXISTING BOOKING</option>
+                    <option value="New-booking">NEW BOOKING</option>
+                    <option value="other">OTHER</option>
+                </select>
+                <div id="dateRange">
+                    <label for="checkIn">Check in:</label>
+                    <input type="date" name="checkIn" id="checkIn" lang="en">
+                    <label for="checkOut">Check out:</label>
+                    <input type="date" name="checkOut" id="checkOut" lang="en">
+                </div>
+                <div id="bookingNr">
+                    <label for="bookingNum">Booking number:</label>
+                    <input type="text" id="bookingNum" name="bookingNum">
+                </div>
+                <br>
+                <label for="message">Message:</label>
+                <br>
+                <textarea id="message" name="message" rows="10" cols="30"></textarea>
+                <br>
+                <label for="terms">I agree Privacy and Integrity</label>
+                <input type="checkbox" id="terms" name="terms" required>
+                <br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+    <div>
+        <a href="#" class="to-top"><img src="media\images\ArrowIcon.png" alt="An arrow shaped icon " title="To top"></a>
+    </div>
+    <footer>
+        ©2020 Petra Resort Jordan. All Rights Reserved. | <a href="contact-us.html">Contact us</a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
