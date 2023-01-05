@@ -97,12 +97,11 @@ header {
     margin-bottom: 5vh;
 
 }
-
 .heroText {
     width: 50%;
     padding: 5vw;
     position: absolute;
-    top: 20%;
+    top: 12%;
     left: 0;
     color: #4A4338;
     font-size: 1rem;
@@ -116,63 +115,58 @@ header {
 }
 
 .videoArticle {
-    display: flex;
-    justify-content: space-around;
-
     margin: 0 5vw 5vh 5vw;
     height: 50vh;
-}
-
-.videoText {
     color: #4A4338;
-    width: 50%;
     font-size: 1rem;
-
 }
 
 .videoArticle video {
     border-radius: 5px;
     max-height: 100%;
     height: auto;
+    margin-left: 2vw;
+    float: right;
 }
 
 .sepLine {
     border: 3px solid #BBAE99;
     border-radius: 5px;
     width: 70vw;
-    margin: auto;
+    margin:auto;
+    
 
 }
 
 .choosenRooms {
-    margin: 5vh 5vw 5vh 5vw;
+    margin: 5vh 5vw 6vh 5vw;
     display: flex;
     justify-content: space-evenly;
 }
 
 .roomDesc {
     color: #4A4338;
-    width: 15vw;
+    max-width: 25vw;
 }
 
 .choosenRooms img {
-    max-height: 30vh;
+    max-width: 25vw;
     border-radius: 5px;
 }
 
 .facilities {
-    margin: 5vh 5vw 5vh 5vw;
+    margin: 5vh 5vw 3vh 5vw;
     display: flex;
     justify-content: space-evenly;
 }
 
 .facilityDesc {
     color: #4A4338;
-    width: 15vw;
+    max-width: 25vw;
 }
 
 .facilities img {
-    max-height: 30vh;
+    max-width: 25vw;
     border-radius: 5px;
 }
 
@@ -312,7 +306,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    margin-top: 5vh;
 }
 
 footer a {
@@ -322,7 +316,10 @@ footer a {
     color: #4A4338;
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 800px) {
+    *{
+        font-size: 0.9rem;
+    }
     #contact-us-button {
         margin-left: 7vw;
 
@@ -424,16 +421,11 @@ footer a {
         opacity: 0;
     }
     .videoArticle {
-        display: flex;
+        display: auto;
         justify-content: space-around;
         margin: 0 5vw 5vh 5vw;
         height: 50vh;
-        
-    }
-    .videoText {
-        color: #4A4338;
         font-size: 0.6rem;
-        margin:1vw;
     }
     .videoArticle video {
         border-radius: 5px;
@@ -442,14 +434,12 @@ footer a {
         float: right;
     }
     .choosenRooms {
-        margin: 5vw;
-        display: flex;
-        justify-content: space-evenly;
+        margin: 5vh 5vw 5vh 5vw;
         flex-direction: column;
     }
     .roomDesc {
         color: #4A4338;
-        width: 100%;
+        max-width: 90vw;
         margin-bottom: 4vh;
     }
     .choosenRooms img {
@@ -458,15 +448,13 @@ footer a {
     }
     
     .facilities {
-        margin: 5vw;
-        display: flex;
-        justify-content: space-evenly;
+        margin: 5vh 5vw 5vh 5vw;
         flex-direction: column;
     }
     
     .facilityDesc {
         color: #4A4338;
-        width: 100%;
+        max-width: 90vw;
         margin-bottom: 4vh;
     }
     .facilities img {
