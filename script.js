@@ -11,11 +11,12 @@ window.addEventListener("scroll", () => {
         toTop.classList.remove("active");
     }
 });
-document.getElementById("subject").addEventListener("change", function () {
-    if (this.value === "Existing-booking") {
+const subject = document.getElementById('subject');
+subject?.addEventListener("change", function () {
+    if (this.value == "Existing-booking") {
         document.getElementById("dateRange").style.display = "none";
         document.getElementById("bookingNr").style.display = "block";
-    } else if (this.value === "New-booking") {
+    } else if (this.value == "New-booking") {
         document.getElementById("bookingNr").style.display = "none";
         document.getElementById("dateRange").style.display = "block";
     }else{
@@ -23,7 +24,8 @@ document.getElementById("subject").addEventListener("change", function () {
         document.getElementById("bookingNr").style.display = "none";
     }
 });
-document.getElementById("contactForm").addEventListener("submit", function(event) {
+const contactForm = document.getElementById("contactForm");
+contactForm?.addEventListener("submit", function(event) {
     event.preventDefault(); 
     document.getElementById("contactForm").style.display = "none"; 
     document.getElementById("confirmationMSG").style.display = "block"; 
