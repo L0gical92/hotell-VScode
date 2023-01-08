@@ -39,8 +39,7 @@ header {
 }
 
 .logo a img {
-    width: 6.5rem;
-
+    max-height: 8vh;
 }
 
 .hamburger {
@@ -184,6 +183,8 @@ header {
 }
 
 .room {
+    
+    border-radius: 5px;
     margin: 7vh;
     display: flex;
     justify-content: center;
@@ -191,21 +192,30 @@ header {
 }
 
 .room img {
+    max-width: 50vw;
     max-height: 50vh;
     border-radius: 5px;
 }
 
 .roomfeatures {
-    margin-left: 5vw;
+    margin-top: 5vh;
+    margin-left: 3vw;
 }
 
 .roomfeatures ul {
     margin-left: 1vw;
 }
+.priceBook{
+    margin-right: 2vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .amenities img {
     margin: 2vh;
-    height: 3vh;
+    width: 2vw;
+    max-height: 3vh;
 }
 
 .bookButton {
@@ -315,7 +325,7 @@ footer a {
     font-weight: 700;
     margin-left: 5px;
     text-decoration: none;
-    color: #4A4338;
+    color: #171511;
 }
 
 @media only screen and (max-width: 800px) {
@@ -472,6 +482,7 @@ footer a {
     }
     .room {
         background-color: rgba(187, 174, 153, 0.2);
+        border-radius: 5px;
         margin: 5vw;
         display: flex;
         justify-content: center;
