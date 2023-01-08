@@ -214,8 +214,7 @@ header {
 
 .amenities img {
     margin: 2vh;
-    width: 2vw;
-    max-height: 3vh;
+    width: 1vw;
 }
 
 .bookButton {
