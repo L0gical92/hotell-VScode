@@ -282,6 +282,9 @@ select{
     
 
 }
+fieldset{
+    padding: 1vw;
+}
 textarea{
     width: 15vw;
     border: 1px solid #ccc;
@@ -545,6 +548,7 @@ footer a {
         margin-left: 15vw;
     }
     iframe{
+        margin-bottom: 2vh;
         height:100px;
         width:100%;
     }
